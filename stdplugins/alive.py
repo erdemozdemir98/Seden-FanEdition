@@ -27,10 +27,10 @@ DEFAULTUSER = Config.ALIVE_NAME if Config.ALIVE_NAME else uname().node
 
 
 # @register(outgoing=True, pattern="^.alive$")
-@borg.on(admin_cmd("on"))
-async def amireallyalive(on):
+@borg.on(admin_cmd(pattern="alive ?(.*)"))
+async def amireallyalive(alive):
     """ For .on command, check if the bot is running.  """
-    await on.edit(
+    await alive.edit(
                      "Seden: Fan Edition\n"
                      " \n"
                      f"Telethon sürümü: {version.__version__} \n \n"
