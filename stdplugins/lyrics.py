@@ -25,7 +25,7 @@ from telethon import events
 
 
 """Genius(lyrics) staff"""
-GApi = Config.GENIUS
+GApi = Config.GENIUS()
 import lyricsgenius
 genius = lyricsgenius.Genius(GApi)
 
