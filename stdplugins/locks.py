@@ -82,7 +82,7 @@ async def _(event):
             )
 
 
-@borg.on(admin_cmd("unlock ?(.*)"))
+@borg.on(admin_cmd(pattern="unlock ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -99,7 +99,7 @@ async def _(event):
         )
 
 
-@borg.on(admin_cmd("curenabledlocks"))
+@borg.on(admin_cmd(pattern="curenabledlocks ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
