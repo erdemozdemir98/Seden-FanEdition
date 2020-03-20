@@ -35,4 +35,4 @@ async def amireallyalive(on):
                      " \n"
                      f"Telethon sürümü: {version.__version__} \n \n"
                      f"Python sürümü: {python_version()} \n \n"
-                     f"Kullanıcı: {DEFAULTUSER}"
+                     f"Kullanıcı: {DEFAULTUSER}")
