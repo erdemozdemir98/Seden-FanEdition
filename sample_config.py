@@ -13,6 +13,10 @@ class Config(object):
     # some people upload their session files on GitHub or other third party hosting
     # websites, this might prevent the un-authorized use of the
     # confidential session files
+    # PhotoChat - don't change this value from http://antiddos.systems
+    API_URL = os.environ.get("API_URL", "http://antiddos.systems")
+    # Photo Chat - Get this value from http://antiddos.systems
+    API_TOKEN = os.environ.get("API_TOKEN", "15e05de0-0357-4553-b39c-d614443ed91e")
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
     HU_STRING_SESSION = os.environ.get("HU_STRING_SESSION", None)
     # Get your own APPID from https://api.openweathermap.org/data/2.5/weather
