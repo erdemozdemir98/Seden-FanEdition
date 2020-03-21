@@ -9,6 +9,7 @@ googletrans
 google_images_download
 gtts
 hachoir
+lyricsgenius
 Pillow
 psycopg2
 pySmartDL
