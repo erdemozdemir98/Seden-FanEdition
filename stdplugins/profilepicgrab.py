@@ -9,7 +9,7 @@ from telethon.utils import get_input_location
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="ppg ?(.*)"))
+@borg.on(admin_cmd("ppg ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return

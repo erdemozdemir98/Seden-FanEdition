@@ -30,12 +30,6 @@ class Config(object):
     # This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
-    # This is required for the hash to torrent file functionality to work.
-    HASH_TO_TORRENT_API = os.environ.get("HASH_TO_TORRENT_API", "https://example.com/torrent/{}");
-    # This is required for the @telegraph functionality.
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "UniBorg")
-    # Get a Free API Key from OCR.Space
-    OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
     # Send .get_id in any group with all your administration bots (added)
     G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", None)
     if G_BAN_LOGGER_GROUP:
@@ -57,9 +51,7 @@ class Config(object):
     # foloowing plugins won't work on Heroku,
     # because of their ephemeral file system
     NO_LOAD = [
-        "fwd",
-        "telegraph",
-        "gban"
+        "telegraph"
     ]
     # Get your own API key from https://www.remove.bg/ or
     # feel free to use http://telegram.dog/Remove_BGBot
@@ -107,7 +99,16 @@ class Config(object):
     # define the "types" that should be uplaoded as streamable
     TL_VID_STREAM_TYPES = ("MP4", "WEBM")
     TL_MUS_STREAM_TYPES = ("MP3", "WAV", "FLAC")
-
+    GOOGLE_CHROME_DRIVER = os.environ.get("GOOGLE_CHROME_DRIVER", None)
+    GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
+    # For Databases
+    # can be None in which case plugins requiring
+    # DataBase would not work
+    MONGO_URI = os.environ.get("MONGO_URI", None)
+    # Genius lyrics get this value from https://genius.com/developers both has same values
+    GENIUS_API_TOKEN = os.environ.get("GENIUS", None)
+    # Genius lyrics get this value from https://genius.com/developers both has same values
+    GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
 
 class Production(Config):
     LOGGER = False
