@@ -103,8 +103,9 @@ class Config(object):
     # define the "types" that should be uplaoded as streamable
     TL_VID_STREAM_TYPES = ("MP4", "WEBM")
     TL_MUS_STREAM_TYPES = ("MP3", "WAV", "FLAC")
-    GOOGLE_CHROME_DRIVER = os.environ.get("GOOGLE_CHROME_DRIVER", None)
-    GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
+    # required for Carbon
+    CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
+    CHROME_BIN = os.environ.get("CHROME_BIN", None)
     # For Databases
     # can be None in which case plugins requiring
     # DataBase would not work
@@ -113,6 +114,7 @@ class Config(object):
     GENIUS_API_TOKEN = os.environ.get("GENIUS", None)
     # Genius lyrics get this value from https://genius.com/developers both has same values
     GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
+    BOT_HUB = os.environ.get("BOT_HUB", None)
 
 class Production(Config):
     LOGGER = False
