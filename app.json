@@ -100,6 +100,16 @@
       "description": "Number of rows of modules that needs to be displayed in the .helpme command",
       "required": false
     },
+    "CHROME_BIN": {
+      "description": "For Carbon.py",
+      "value": "/app/.apt/usr/bin/google-chrome",
+      "required": false
+    },
+    "CHROME_DRIVER": {
+      "description": "For Carbon.py",
+      "value": "/app/.chromedriver/bin/chromedriver",
+      "required": false
+    },
     "COMMAND_HAND_LER": {
       "description": "specify command handler that should be used for the plugins. This should be a valid \"regex\" pattern",
       "required": false
