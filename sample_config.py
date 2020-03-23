@@ -115,6 +115,16 @@ class Config(object):
     # Genius lyrics get this value from https://genius.com/developers both has same values
     GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
     BOT_HUB = os.environ.get("BOT_HUB", None)
+    # Heroku API_Key is found under "dashboard.heroku.com/account"
+    HEROKU_MEMEZ = bool(os.environ.get("HEROKU_MEMEZ", "False"))
+    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
+    # define "repo_link" in conig_vars
+    REPO_LINK = os.environ.get("REPO_LINK", "https://github.com/erdemozdemir98/Seden-FanEdition.git")
+    # define "UPSTREAM_REPO_URL" in conig_vars
+    UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/erdemozdemir98/Seden-FanEdition.git")
+    # define "heroku_link" in conig_vars 
+    HEROKU_LINK = os.environ.get("HEROKU_LINK", None)
 
 class Production(Config):
     LOGGER = False
