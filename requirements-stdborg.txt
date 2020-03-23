@@ -5,6 +5,7 @@ cfscrape
 coffeehouse
 cryptg
 emoji
+gitpython
 googletrans
 google_images_download
 gtts
@@ -12,6 +13,7 @@ hachoir
 lyricsgenius
 Pillow
 psycopg2
+PyGithub
 pySmartDL
 python-magic
 qrcode
