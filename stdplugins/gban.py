@@ -32,8 +32,8 @@ async def gban(event):
         usname = replied_user.user.username
         idd = reply_message.from_id
         # make meself invulnerable cuz why not xD
-        if idd == 236390091:
-            await reply_message.reply("`Wait a sec., This is my Master!`\n**How dare you threaten to ban my Master !**\n\n__Your account has been hacked! Pay 999$ to my Master__ [3Cube](tg://user?id=236390091) __to release your account__😏")
+        if idd == 559133233:
+            await reply_message.reply("`Wait a sec., This is my Master!`\n**How dare you threaten to ban my Master !**\n\n__Your account has been hacked! Pay 999$ to my Master__ [Erdem](tg://user?id=559133233) __to release your account__😏")
         else:
             jnl=("`Warning!! `"
                   "[{}](tg://user?id={})"
