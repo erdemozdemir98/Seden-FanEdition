@@ -35,4 +35,5 @@ async def amireallyalive(alive):
                      " \n"
                      f"`Telethon sürümü: {version.__version__} `\n \n"
                      f"`Python sürümü: {python_version()} `\n \n"
+                     f"`Userbot sürümü: v0.1 pre-alfa `\n \n"
                      f"`Kullanıcı: {DEFAULTUSER}`")
