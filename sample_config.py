@@ -125,6 +125,8 @@ class Config(object):
     UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/erdemozdemir98/Seden-FanEdition.git")
     # define "heroku_link" in conig_vars 
     HEROKU_LINK = os.environ.get("HEROKU_LINK", None)
+    # Userbot logging feature switch.
+    BOTLOG = bool(os.environ.get("BOTLOG", "False"))
 
 class Production(Config):
     LOGGER = False
