@@ -10,6 +10,7 @@ googletrans
 google_images_download
 gtts
 hachoir
+heroku3
 lyricsgenius
 Pillow
 psycopg2
