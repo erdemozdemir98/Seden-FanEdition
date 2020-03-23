@@ -31,8 +31,8 @@ DEFAULTUSER = Config.ALIVE_NAME if Config.ALIVE_NAME else uname().node
 async def amireallyalive(alive):
     """ For .on command, check if the bot is running.  """
     await alive.edit(
-                     "Seden: Fan Edition\n"
+                     "`Seden: Fan Edition`\n"
                      " \n"
-                     f"Telethon sürümü: {version.__version__} \n \n"
-                     f"Python sürümü: {python_version()} \n \n"
-                     f"Kullanıcı: {DEFAULTUSER}")
+                     f"`Telethon sürümü: {version.__version__} `\n \n"
+                     f"`Python sürümü: {python_version()} `\n \n"
+                     f"`Kullanıcı: {DEFAULTUSER}`")
