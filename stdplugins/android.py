@@ -156,3 +156,5 @@ async def codename_info(request):
                 .replace('<b>', '').replace('</b>', '').strip()
             reply += f'**{title}**: {data}\n'
     await request.edit(reply)
+
+    
