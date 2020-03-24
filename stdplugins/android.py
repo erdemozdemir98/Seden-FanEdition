@@ -106,8 +106,8 @@ async def codename_info(request):
     await request.edit(reply)
 
     @borg.on(admin_cmd(pattern='specs(?: |)([\S]*)(?: |)([\s\S]*)'))
-    async def devices_specifications(request):
-    """ Mobile devices specifications """
+    async def device_specifications(request):
+    """ search for android device specs """
     textx = await request.get_reply_message()
     brand = request.pattern_match.group(1).lower()
     device = request.pattern_match.group(2).lower()
