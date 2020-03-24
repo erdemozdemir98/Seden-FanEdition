@@ -12,6 +12,7 @@ gtts
 hachoir
 heroku3
 lyricsgenius
+lxml
 Pillow
 psycopg2
 PyGithub
